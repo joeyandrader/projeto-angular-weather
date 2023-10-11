@@ -42,6 +42,26 @@
           {{ weatherDatasInput.main.temp_max | number : "1.0-0" }}ºc
         </div>
       </div>
+
+      <div class="info-block">
+        <div class="info-block-label">
+          <fa-icon size="lg" [icon]="humidityIcon"></fa-icon>
+          <span>Humidade</span>
+        </div>
+        <div class="info-block-value">
+          {{ weatherDatasInput.main.humidity }}%
+        </div>
+      </div>
+
+      <div class="info-block">
+        <div class="info-block-label">
+          <fa-icon size="lg" [icon]="windIcon"></fa-icon>
+          <span>Velocidade</span>
+        </div>
+        <div class="info-block-value">
+          {{ weatherDatasInput.wind.speed }} km/h
+        </div>
+      </div>
     </div>
   </div>
 </div>
